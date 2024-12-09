@@ -1,0 +1,18 @@
+prototype_pages = [
+    {"name": "Welcome/Login Screen", "description": "Allows the users to log in with username and password or continue as a guest."},
+    {"name": "Options Screen", "description": "Displays options to create a new shopping list, view saved lists, or edit previous lists."},
+    {"name": "New Grocery List", "description": "Allows users to create a new shopping list in organized categories"},
+    {"name": "Saved Lists Screen", "description": "Displays a list of saved shopping lists with dates for users to view or edit."},
+    {"name": "Price Comparison Screen", "description": "Allows users compare the prices of their items across different stores."}
+]
+
+print("Prototype Details:\n")
+print(f"Total Number of Pages: {len(prototype_pages)}\n")
+
+print("Pages and Descriptions:")
+for i, page in enumerate(prototype_pages, start=1):
+    print(f"{i}. {page['name']} - {page['description']}")
+
+print("\nSequence/Flow of the Pages:")
+flow = " -> ".join(page['name'] for page in prototype_pages)
+print(flow)
